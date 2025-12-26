@@ -1,0 +1,8 @@
+*.swp
+__pycache__
+.DS_Store
+github_settings.py
+*.pyc
+.venv
+.ve42
+.ve52
