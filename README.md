@@ -1,0 +1,1 @@
+learn django again, 2025.12
