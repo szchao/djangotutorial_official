@@ -5,6 +5,8 @@ from django.views.generic import TemplateView
 app_name = 'ttest'
 
 urlpatterns = [
+    path('catdetail/<int:pk>/', views.CatDetailView.as_view(), name='cat-detail'),
+    path('catlist/', views.CatListView.as_view(), name='cat-list'),
     path('game/<guess>', views.GameView.as_view(), name="game-view"),
     path('remain/<guess>', views.RestMainView.as_view()),
     path('main/', views.MainView.as_view()),

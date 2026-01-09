@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'getpost.apps.GetpostConfig',
     'ttest.apps.TtestConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',

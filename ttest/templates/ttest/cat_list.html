@@ -1,0 +1,17 @@
+<h1>Cat List</h1>
+
+{% if cat_list %}
+    <ul>
+    {% for cat in cat_list %}
+        <li><a href="{% url 'ttest:cat-detail' cat.id %}">{{ cat.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No cats are available.</p>
+{% endif %}
+<br>
+{{ object_list }}
+<br>
+{{ cat_list }}
+<br>
+{{ crazy_thing}}
